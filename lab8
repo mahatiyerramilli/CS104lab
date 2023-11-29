@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+   
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === '' || password === '') {
+                alert('error: n oth username and password are required.');
+            } else {
+                setTimeout(function() {
+                    alert('Login successful!'); 
+                }, 3000);
+            }
+        });
+    </script>
+
+</body>
+</html>
