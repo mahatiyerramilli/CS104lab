@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <button id="changeTextBtn">Click me!</button>
+    <p id="displayText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, cupiditate minus aspernatur impedit assumenda iure doloremque nihil obcaecati distinctio quas reiciendis, dolorum unde laudantium veritatis molestiae qui, debitis iusto repudiandae?</p>
+
+    <script>
+        var button = document.getElementById('changeTextBtn');
+        var paragraph = document.getElementById('displayText');
+
+        button.addEventListener('click', function() {
+            changeText();
+        });
+
+        function changeText() {
+            paragraph.innerText = 'Hello, JavaScript World!';
+        }
+    </script>
+
+</body>
+</html>
